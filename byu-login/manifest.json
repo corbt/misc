@@ -1,0 +1,14 @@
+{
+	"name": "BYU Login",
+	"version": "0.1",
+	"manifest_version": 2,
+
+	"description": "Automatically log in to BYU CAS.",
+
+	"content_scripts": [{
+		"matches": ["*://cas.byu.edu/cas/login*"],
+		"js": ["jquery-2.0.0.min.js","login.js"]
+	}],
+
+	"minimum_chrome_version": "26"
+}
