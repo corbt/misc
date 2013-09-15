@@ -1,0 +1,14 @@
+{
+	"name": "LDS Login",
+	"version": "0.1",
+	"manifest_version": 2,
+
+	"description": "Automatically log in to LDS.org.  Only useful for me",
+
+	"content_scripts": [{
+		"matches": ["*://www.lds.org/*"],
+		"js": ["jquery-2.0.0.min.js","login.js"]
+	}],
+
+	"minimum_chrome_version": "26"
+}
